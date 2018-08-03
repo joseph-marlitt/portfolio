@@ -53,9 +53,10 @@
     .menu-branding.show {
       transform: translate3d(0, 0, 0); }
     .menu-branding .portrait {
-      width: 200px;
-      height: 200px;
-      background: url("../img/headshot.jpg");
+      width: 250px;
+      height: 250px;
+      background: center url("../img/headshot.jpg");
+      background-size: cover;
       border-radius: 50%;
       border: solid 3px #eece1a; }
   .menu .nav-item {
@@ -168,6 +169,7 @@ main {
   grid-auto-columns: repeat(3, 1fr); }
   .about-info .bio-image {
     grid-area: bioimage;
+    max-height: 250px;
     margin: auto;
     border-radius: 50%;
     border: #eece1a 3px solid; }
