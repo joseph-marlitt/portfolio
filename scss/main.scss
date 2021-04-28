@@ -1,5 +1,6 @@
 @import "config";
 @import "menu";
+@import "mobile";
 
 * {
   box-sizing: border-box;
@@ -144,10 +145,42 @@ main {
   align-items: center;
   margin-top: 1rem;
 
+  .contact-form{
+    padding: 0.5rem;
+
+    .input-form{
+      width: 50%;
+      background-color:$primary-color;
+      font-size: 1rem;
+      border: 1px #fff solid;
+      padding: 1rem 2rem;
+      margin-bottom: 1rem; 
+      
+    }
+    ::placeholder {
+      color:#fff;
+      font-size: 1rem;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      
+    }
+   textarea {
+    width: 50%;
+    height: 10rem;
+    resize: none;
+    color: #fff;
+    background-color:$primary-color;
+    font-size: 1rem;
+    border: 1px #fff solid;
+    padding: 1rem 2rem;
+    margin-bottom: 3rem; 
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+   }
+  }
+
   div {
-    font-size: 2rem;
-    border: 3px #fff solid;
-    padding: 1.5rem 2.5rem;
+    font-size: 1rem;
+    border: 1px #fff solid;
+    padding: 1rem 2rem;
     margin-bottom: 3rem;
     @include easeOut;
 
@@ -172,9 +205,23 @@ main {
   &:hover {
     background: $secondary-color;
     color: set-text-color($secondary-color);
+    cursor: pointer;
   }
 }
-
+.btn-submit {
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 2;
+  border-color: #fff;
+  margin-bottom: 0.3rem;
+  background-color: $primary-color;
+  color: #fff;
+  cursor: pointer;
+  &:hover {
+    background: $secondary-color;
+    color: set-text-color($secondary-color);
+  }
+}
 .btn-dark {
   @extend .btn;
   background: darken($primary-color, 50);
@@ -194,4 +241,3 @@ main {
   height: 60px;
 }
 
-@import "mobile";

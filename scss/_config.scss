@@ -1,8 +1,8 @@
 $primary-color: #444;
 $secondary-color: #eece1a;
 $show-home-image: true;
-$home-image: url(../img/climbing.png);
-$background-opacity: 0.9;
+$home-image: url(../img/streets.jpg);
+$background-opacity: 0.5;
 
 @mixin easeOut {
   transition: all 0.4s ease-out;
