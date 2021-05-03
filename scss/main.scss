@@ -1,6 +1,6 @@
 @import "config";
 @import "menu";
-@import "mobile";
+
 
 * {
   box-sizing: border-box;
@@ -90,7 +90,7 @@ main {
 
   .bio-image {
     grid-area: bioimage;
-    max-height: 250px;
+    //max-height: 250px;
     margin: auto;
     border-radius: 50%;
     border: $secondary-color 3px solid;
@@ -98,7 +98,8 @@ main {
 
   .bio {
     grid-area: bio;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+    font-style: italic;
   }
 
   .job-1 {
@@ -149,7 +150,7 @@ main {
     padding: 0.5rem;
 
     .input-form{
-      width: 50%;
+      width: 75%;
       background-color:$primary-color;
       font-size: 1rem;
       border: 1px #fff solid;
@@ -164,7 +165,6 @@ main {
       
     }
    textarea {
-    width: 50%;
     height: 10rem;
     resize: none;
     color: #fff;
@@ -241,3 +241,4 @@ main {
   height: 60px;
 }
 
+@import "mobile";

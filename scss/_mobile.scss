@@ -43,16 +43,28 @@
   .portrait {
     background: url(../img/portrait.jpg);
   }
-
+.about {
+  display: block;
+}
   .about-info {
+    display: block;
     grid-template-areas:
-      "bioimage"
+      "headshot"
       "bio"
       "job1"
       "job2"
       "job3";
 
     grid-template-columns: 1fr;
+
+    .bio-image{
+      max-height: 250px;
+      max-width: 250px;
+    }
+
+    .job {
+      margin: 1rem;
+    }
   }
 
   .projects {
@@ -67,5 +79,9 @@
 
   .projects {
     grid-template-columns: 1fr;
+  }
+  .about-info{
+    display:block;
+    grid-template-columns:1fr
   }
 }
