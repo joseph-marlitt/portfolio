@@ -35,11 +35,31 @@ function toggleMenu() {
   }
 }
 
-$(".photo-gallery img").click(function(){
-  $("#full-image").attr("src", $(this).attr("src"));
-  $('#image-viewer').show();
-});
+//Image viewer for Photography
+const photoBtn = document.querySelectorAll(".photo img")
+const modal = document.getElementById("image-viewer")
 
-$("#image-viewer .close").click(function(){
-  $('#image-viewer').hide();
-});
+let showModal = false
+
+photoBtn.forEach(addEventListener("click", toggleModal));
+
+function toggleModal() {
+  if (!showModal) {
+    document.getElementById("full-image").setAttribute("src", this.src)
+    showModal = true;
+    modal.style.display = "block";
+  }
+  else {
+    showModal = false;
+    document.getElementById("image-viewer").style.display = "none";
+  }
+}
+
+//Closes Modal
+
+modal.addEventListener("click", toggleClose)
+
+function toggleClose() {
+  modal.style.display = "none";
+  showModal = false;
+}
