@@ -36,18 +36,21 @@ function toggleMenu() {
 }
 
 //Image viewer for Photography
-const photoBtn = document.querySelectorAll(".photo img")
-const modal = document.getElementById("image-viewer")
+const photoBtn = document.querySelectorAll(".photo img");
+const modal = document.getElementById("image-viewer");
 
 let showModal = false
 
-photoBtn.forEach(addEventListener("click", toggleModal));
+photoBtn.forEach(function (img, i) {
+  img.addEventListener("click", toggleModal)
+});
 
 function toggleModal() {
   if (!showModal) {
     document.getElementById("full-image").setAttribute("src", this.src)
     showModal = true;
     modal.style.display = "block";
+
   }
   else {
     showModal = false;

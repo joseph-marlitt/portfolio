@@ -70,6 +70,10 @@
   .projects {
     grid-template-columns: repeat(2, 1fr);
   }
+  
+  .photo-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 //Smart Phones
 @include mediaSm {
@@ -78,6 +82,9 @@
   }
 
   .projects {
+    grid-template-columns: 1fr;
+  }
+  .photo-gallery {
     grid-template-columns: 1fr;
   }
   .about-info{
