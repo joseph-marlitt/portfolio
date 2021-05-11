@@ -204,7 +204,7 @@ main {
 
 .photo-gallery {
   display: grid;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   grid-gap: 0.7rem;
   grid-template-columns: repeat(3, 1fr); }
   .photo-gallery img {
@@ -232,7 +232,8 @@ main {
   #image-viewer .modal-content {
     margin: auto;
     display: block;
-    max-width: 80%; }
+    max-width: 80%;
+    max-height: 90%; }
   #image-viewer .modal-content {
     animation-name: zoom;
     animation-duration: 0.6s; }
