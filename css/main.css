@@ -209,7 +209,7 @@ main {
   grid-template-columns: repeat(3, 1fr); }
   .photo-gallery img {
     width: 100%;
-    max-height: 23rem;
+    max-height: 40rem;
     border: 3px #fff solid;
     cursor: pointer; }
     .photo-gallery img:hover {
@@ -232,10 +232,7 @@ main {
   #image-viewer .modal-content {
     margin: auto;
     display: block;
-    /*     width: 80%;
- */
-    max-width: 80%;
-    border-style: solid; }
+    max-width: 80%; }
   #image-viewer .modal-content {
     animation-name: zoom;
     animation-duration: 0.6s; }
